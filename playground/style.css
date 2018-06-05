@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600');
+
 
 html, body {
     padding: 0;
     margin: 0;
-    font-family: "Poor Story", serif;
+    font-family: "Cabin Condensed", serif;
 }
 
 .page-wrapper {
@@ -66,8 +67,8 @@ html, body {
 
 .projects {
     display: grid;
-    grid-gap: 10px;
-    grid-template-areas: "one two";
+    grid-gap: 0;
+    grid-template-areas: "one two three";
     /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
 }
 
@@ -85,16 +86,26 @@ html, body {
 }
 
 .project__name {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin: 10px 0 0 0;
 }
 
 .project__info__text {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 10px;
+
 }
+
+/*
+.project img {
+    display: grid;
+    width: -webkit-fill-available;
+    height: fit-content;
+}
+	background: red;
+	position: relative;
+	display: grid;
+	grid-template-areas: "3";
+	width: 100%;
+*/
 
 @media (max-width: 700px) {
     .projects {
