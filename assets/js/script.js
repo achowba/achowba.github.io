@@ -1,6 +1,5 @@
 const toggleSwitch = document.querySelector('#toggleDarkMode');
 const currentTheme = localStorage.getItem('theme');
-// const logoImage = document.querySelector("#logo"); // logoImage.src = "../assets/img/logo_dark.png";
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);

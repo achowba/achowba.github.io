@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700,800');
 
 :root {
 	--primary-color: #2d2d2d;
@@ -6,7 +6,7 @@
 	--bg-color: #FAFAFA;
 	--heading-color: #222222;
 	--link-color: #325aa2;
-	--hover-color: #000000;
+    --hover-color: #e59400;
 }
 
 [data-theme="dark"] {
@@ -34,11 +34,10 @@ a {
 
 a:hover {
 	color: var(--hover-color);
-	/* color: #fff; */
 }
 
 .page-wrapper {
-	margin: 10% 15%;
+	margin: 10% 14%;
 }
 
 #header {
@@ -59,7 +58,7 @@ a:hover {
 	margin-top: 25px;
 	list-style: none;
 	float: right;
-	/*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .menu-list li {
@@ -67,8 +66,14 @@ a:hover {
 }
 
 .menu-list a {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: var(--link-color);
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+.menu-list a:hover {
+    color: var(--hover-color);
 }
 
 .section__header {
@@ -90,7 +95,8 @@ a:hover {
 
 .about__text {
 	font-size: 1.5rem;
-	color: var(--text-color);
+    color: var(--text-color);
+    font-weight: 400;
 }
 
 .intern-at {
@@ -106,7 +112,7 @@ a:hover {
 
 .projects {
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 30px;
 	grid-template-areas: "one two";
 	/*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
 }
@@ -118,14 +124,14 @@ a:hover {
 
 .project__name {
 	font-size: 2rem;
-	font-weight: 600;
+	font-weight: 500;
 	margin: 10px 0 0 0;
 	color: var(--primary-color);
 }
 
 .project__info__text {
 	font-size: 1.3rem;
-	font-weight: 500;
+	font-weight: 400;
 	margin-top: 10px;
 	color: var(--text-color);
 }
@@ -135,7 +141,7 @@ a:hover {
 	font-size: 1.3rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 	.logo-wrapper img {
 		max-width: 130px;
 	}
