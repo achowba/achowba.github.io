@@ -6,7 +6,8 @@
 	--bg-color: #FAFAFA;
 	--heading-color: #222222;
 	--link-color: #325aa2;
-    --hover-color: #e59400;
+    /* --hover-color: #e59400; */
+    --hover-color: #3fcd96;
 }
 
 [data-theme="dark"] {
@@ -15,7 +16,8 @@
 	--bg-color: #172024;
 	--heading-color: #ffffff;
 	--link-color: #57b6fa;
-	--hover-color: #ffc401;
+	/* --hover-color: #ffc401; */
+	--hover-color: #3fcd96;
 }
 
 html, body {
@@ -99,8 +101,8 @@ a:hover {
     font-weight: 400;
 }
 
-.intern-at {
-    color: #f05924;
+.dev-at {
+    color: #1c60b4;
 }
 
 /*
@@ -265,12 +267,11 @@ a:hover {
 }
 
 .toggle-button .checkbox input:checked + label {
-	border-color: #ffc401;
+	border-color: var(--hover-color);
 }
 
 .toggle-button .checkbox input:checked + label:after {
-	/* background: #3fb454; */
-	background: #ffc401;
+	background: var(--hover-color);
 	left: auto;
 	-webkit-transform: translateX(0px);
 	transform: translateX(0px);
