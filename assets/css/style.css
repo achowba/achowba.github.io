@@ -144,26 +144,33 @@ a:hover {
 }
 
 @media (max-width: 800px) {
-	.logo-wrapper img {
-		max-width: 130px;
+    .logo-wrapper img {
+        max-width: 130px;
 	}
 
 	.projects {
-		grid-template-areas:
-			"one"
-			"two"
-			"three"
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
 			"four"
-		;
-	}
+            ;
+        }
 
-	.page-wrapper {
-		margin: 8% 5%;
+        .page-wrapper {
+            margin: 8% 5%;
 	}
 
 	.about__text {
-		font-size: 1.3rem;
+        font-size: 1.3rem;
 	}
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        top: unset !important;
+        bottom: 0 !important;
+    }
 }
 
 /*  */
