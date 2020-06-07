@@ -27,9 +27,9 @@ function switchTheme(e) {
 
 function changeTitle (theme) {
     if (theme === 'dark') {
-        document.documentElement.setAttribute('title', 'Bravo Six, Going Bright');
+        toggleButtonWrapper.setAttribute('title', 'Bravo Six, Going Bright');
     } else if (theme === 'light') {
-        document.documentElement.setAttribute('title', 'Bravo Six, Going Dark');
+        toggleButtonWrapper.setAttribute('title', 'Bravo Six, Going Dark');
     }
 }
 
