@@ -138,6 +138,10 @@ a:hover {
 	color: var(--text-color);
 }
 
+#contacts {
+    margin-top: 50px;
+}
+
 .contact__text {
 	color: var(--text-color);
 	font-size: 1.3rem;
