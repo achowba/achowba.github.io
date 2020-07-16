@@ -16,22 +16,22 @@
 	--bg-color: #172024;
 	--heading-color: #ffffff;
 	--link-color: #57b6fa;
-	/* --hover-color: #ffc401; */
+	--toggle-button-color: #ffc401;
 	--hover-color: #3fcd96;
 }
 
 html, body {
-	padding: 0;
-	margin: 0;
+	background: var(--bg-color);
 	font-family: "Tajawal", serif;
 	overflow-x: hidden;
-	background: var(--bg-color);
+	margin: 0;
+	padding: 0;
 }
 
 a {
-	text-decoration: none;
 	color: var(--link-color);
 	font-weight: 600;
+	text-decoration: none;
 }
 
 a:hover {
@@ -54,13 +54,13 @@ a:hover {
 
 .menu-list {
 	display: grid;
-	grid-gap: 0;
-	grid-template-columns: repeat(3, 100px);
-	padding: 0;
-	margin-top: 25px;
-	list-style: none;
 	float: right;
+	grid-gap: 0;
+	/* grid-template-columns: repeat(3, 100px); */
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	list-style: none;
+	margin-top: 25px;
+	padding: 0;
 }
 
 .menu-list li {
@@ -68,10 +68,10 @@ a:hover {
 }
 
 .menu-list a {
-    text-decoration: none;
     color: var(--link-color);
-    margin-right: 15px;
     font-size: 1.3rem;
+    margin-right: 15px;
+    text-decoration: none;
 }
 
 .menu-list a:hover {
@@ -79,8 +79,8 @@ a:hover {
 }
 
 .section__header {
-	font-size: 2rem;
 	color: var(--heading-color);
+	font-size: 2rem;
 }
 
 .section__header:first-child {
@@ -96,8 +96,8 @@ a:hover {
 }
 
 .about__text {
-	font-size: 1.5rem;
     color: var(--text-color);
+	font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -125,17 +125,17 @@ a:hover {
 }
 
 .project__name {
+	color: var(--primary-color);
 	font-size: 2rem;
 	font-weight: 500;
 	margin: 10px 0 0 0;
-	color: var(--primary-color);
 }
 
 .project__info__text {
+	color: var(--text-color);
 	font-size: 1.3rem;
 	font-weight: 400;
 	margin-top: 10px;
-	color: var(--text-color);
 }
 
 #contacts {
@@ -154,16 +154,16 @@ a:hover {
 
 	.projects {
         grid-template-areas:
-        "one"
-        "two"
-        "three"
+            "one"
+            "two"
+            "three"
 			"four"
             ;
         }
 
-        .page-wrapper {
-            margin: 8% 5%;
-	}
+    .page-wrapper {
+        margin: 8% 5%;
+    }
 
 	.about__text {
         font-size: 1.3rem;
@@ -172,22 +172,22 @@ a:hover {
 
 @media (max-width: 500px) {
     .toggle-button {
-        top: unset !important;
         bottom: 0 !important;
+        top: unset !important;
     }
 }
 
 /*  */
 .toggle-button {
 	position: fixed;
-	top: 0;
-	right: 0;
 	margin: 25px;
+	right: 0;
+	top: 0;
 }
 
 .checkbox {
-	position: relative;
 	display: inline-block;
+	position: relative;
 }
 
 .checkbox label {
@@ -201,28 +201,28 @@ a:hover {
 }
 
 .checkbox label:after {
-	content: '';
-	position: absolute;
-	width: 50px;
-	height: 50px;
 	border-radius: 100%;
-	left: 0;
-	top: -5px;
-	z-index: 2;
 	background: #fff;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	content: '';
+	height: 50px;
+	position: absolute;
+	left: 0;
+	top: -5px;
 	transition: 0.4s;
+	width: 50px;
+	z-index: 2;
 }
 
 .checkbox input {
+	cursor: pointer;
+	opacity: 0;
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	z-index: 5;
-	opacity: 0;
-	cursor: pointer;
 }
 
 .checkbox input:hover + label:after {
@@ -234,63 +234,65 @@ a:hover {
 }
 
 .toggle-button .checkbox:after {
+	color: #666;
 	content: 'DARK';
 	font-family: "Tajawal";
-	position: absolute;
-	color: #666;
-	top: 7px;
-	right: 14px;
 	font-size: 17px;
 	font-weight: 900;
+	position: absolute;
+	right: 14px;
+	top: 7px;
 }
 
 .toggle-button .checkbox label {
 	background: none;
 	border: 3px solid #777;
-	height: 35px;
 	border-radius: 20px;
+	height: 35px;
 }
 
 .toggle-button .checkbox label:after {
-	content: 'LIGHT';
-	text-align: center;
-	font-family: "Tajawal";
-	color: #fff;
-	font-weight: 900;
-	line-height: 28px;
-	text-indent: 100px;
-	background: #777;
-	overflow: hidden;
-	box-shadow: none;
+    background: #777;
 	border-radius: 14px;
-	-webkit-transform: translateX(-50px);
+	box-shadow: none;
+	color: #fff;
+	content: 'LIGHT';
+	font-family: "Tajawal";
+	font-weight: 900;
+	height: 28px;
+	left: auto;
+	line-height: 28px;
+	text-align: center;
+	text-indent: 100px;
+	overflow: hidden;
+	right: 5px;
+	top: 3px;
 	transform: translateX(-50px);
+	transition: all 0.4s 0.2s, width 0.2s linear, text-indent 0.4s linear;
+	transition-delay: 0.2s, 0s, 0s;
+	width: 28px;
+	-webkit-transform: translateX(-50px);
 	-moz-transition: all 0.4s 0.2s, width 0.2s linear, text-indent 0.4s linear;
 	-o-transition: all 0.4s 0.2s, width 0.2s linear, text-indent 0.4s linear;
 	-webkit-transition: all 0.4s, width 0.2s linear, text-indent 0.4s linear;
 	-webkit-transition-delay: 0.2s, 0s, 0s;
-	transition: all 0.4s 0.2s, width 0.2s linear, text-indent 0.4s linear;
-	top: 3px;
-	left: auto;
-	right: 5px;
-	width: 28px;
-	height: 28px;
 }
 
 .toggle-button .checkbox input:checked + label {
-	border-color: var(--hover-color);
+	border-color: var(--toggle-button-color);
 }
 
 .toggle-button .checkbox input:checked + label:after {
-	background: var(--hover-color);
+	background: var(--toggle-button-color);
 	left: auto;
-	-webkit-transform: translateX(0px);
+	text-indent: 0;
 	transform: translateX(0px);
+	transition: all 0.4s, width 0.2s linear 0.4s, text-indent 0.3s linear 0.4s;
+	transition-delay: 0s, 0.4s, 0.4s;
+	width: 80px;
+	-webkit-transform: translateX(0px);
 	-moz-transition: all 0.4s, width 0.2s linear 0.4s, text-indent 0.3s linear 0.4s;
 	-o-transition: all 0.4s, width 0.2s linear 0.4s, text-indent 0.3s linear 0.4s;
 	-webkit-transition: all 0.4s, width 0.2s linear, text-indent 0.3s linear;
 	-webkit-transition-delay: 0s, 0.4s, 0.4s;
-	transition: all 0.4s, width 0.2s linear 0.4s, text-indent 0.3s linear 0.4s;
-	width: 80px;
-	text-indent: 0;
 }
