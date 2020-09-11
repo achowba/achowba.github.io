@@ -1,3 +1,89 @@
 {
-    "version": 2
+    "version": 2,
+    "routes": [
+        {
+            "src": "/assets",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/css",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/css/",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/docs",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/docs/",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/img",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/img/",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/js",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/js/",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/pwa",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        },
+        {
+            "src": "/assets/pwa/",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev"
+            }
+        }
+    ]
 }
