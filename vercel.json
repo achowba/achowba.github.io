@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "trailingSlash": false,
+    "routes": [
+        {
+            "src": "/assets",
+            "status": 308,
+            "headers": {
+                "Location": "http://achowba.dev/"
+            }
+        }
+    ]
+}
