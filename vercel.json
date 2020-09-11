@@ -1,12 +1,3 @@
 {
-    "version": 2,
-    "routes": [
-        {
-            "src": "/assets/.*",
-            "status": 308,
-            "headers": {
-                "Location": "http://achowba.dev/"
-            }
-        }
-    ]
+    "version": 2
 }
