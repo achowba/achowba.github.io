@@ -7,6 +7,13 @@
             "headers": {
                 "Location": "http://achowba.dev/"
             }
+        },
+        {
+            "src": "/assets/",
+            "status": 308,
+            "headers": {
+                "Location": "http://achowba.dev/"
+            }
         }
     ]
 }
