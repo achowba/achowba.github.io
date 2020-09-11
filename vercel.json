@@ -1,3 +1,19 @@
 {
-    "version": 2
+    "version": 2,
+    "routes": [
+        {
+            "src": "/assets",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev/"
+            }
+        },
+        {
+            "src": "/assets/",
+            "status": 308,
+            "headers": {
+                "Location": "https://achowba.dev/"
+            }
+        }
+    ]
 }
