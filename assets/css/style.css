@@ -6,8 +6,8 @@
 	--bg-color: #FAFAFA;
 	--heading-color: #222222;
 	--link-color: #325aa2;
-    /* --hover-color: #e59400; */
-    --hover-color: #3fcd96;
+    /* --hovesr-color: #e5a700; */
+    --company-color: #e5a700;
 }
 
 [data-theme="dark"] {
@@ -17,7 +17,7 @@
 	--heading-color: #ffffff;
 	--link-color: #57b6fa;
 	--toggle-button-color: #ffc401;
-	--hover-color: #3fcd96;
+    --company-color: #e5a700;
 }
 
 html, body {
@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-	color: var(--hover-color);
+	color: var(--company-color);
 }
 
 .page-wrapper {
@@ -75,7 +75,7 @@ a:hover {
 }
 
 .menu-list a:hover {
-    color: var(--hover-color);
+    color: var(--company-color);
 }
 
 .section__header {
@@ -98,7 +98,7 @@ a:hover {
 .about__text {
     color: var(--text-color);
 	font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .dev-at {
@@ -144,7 +144,8 @@ a:hover {
 
 .contact__text {
 	color: var(--text-color);
-	font-size: 1.3rem;
+    font-size: 1.3rem;
+    font-weight: 300;
 }
 
 @media (max-width: 800px) {
