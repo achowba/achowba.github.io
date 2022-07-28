@@ -6,7 +6,7 @@
 	--bg-color: #FAFAFA;
 	--heading-color: #222222;
 	--link-color: #325aa2;
-    /* --hovesr-color: #e5a700; */
+    /* --hover-color: #e5a700; */
     --company-color: #e5a700;
 }
 
@@ -48,6 +48,7 @@ a:hover {
 }
 
 .logo-wrapper img {
+    border-radius: 50%;
 	max-width: 110px;
 	margin-left: -25px;
 }
@@ -99,10 +100,6 @@ a:hover {
     color: var(--text-color);
 	font-size: 1.5rem;
     font-weight: 300;
-}
-
-.dev-at {
-    color: #1c60b4;
 }
 
 /*
