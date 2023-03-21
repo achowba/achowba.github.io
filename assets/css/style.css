@@ -6,8 +6,7 @@
 	--bg-color: #FAFAFA;
 	--heading-color: #222222;
 	--link-color: #325aa2;
-    /* --hover-color: #e5a700; */
-    --company-color: #e5a700;
+    --company-color: #00E1CB;
 }
 
 [data-theme="dark"] {
@@ -16,8 +15,8 @@
 	--bg-color: #172024;
 	--heading-color: #ffffff;
 	--link-color: #57b6fa;
-	--toggle-button-color: #ffc401;
-    --company-color: #e5a700;
+	--toggle-button-color: #00E1CB;
+    --company-color: #00E1CB;
 }
 
 html, body {
@@ -57,7 +56,6 @@ a:hover {
 	display: grid;
 	float: right;
 	grid-gap: 0;
-	/* grid-template-columns: repeat(3, 100px); */
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	list-style: none;
 	margin-top: 25px;
@@ -113,7 +111,6 @@ a:hover {
 	display: grid;
 	grid-gap: 30px;
 	grid-template-areas: "one two";
-	/*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
 }
 
 .project img {
